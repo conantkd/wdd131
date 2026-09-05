@@ -3,7 +3,8 @@
     --blue: #304860;
     --white: #ffffff;
     --gray: #707070;
-    --font: "Roboto",sans-serif;
+    --primary-font: "Roboto",sans-serif;
+    --secondary-font: "Valley Sans", sans-serif;
 }
 
 * {
@@ -16,6 +17,15 @@ body {
 	font-family: var(--font);
     font-size: 14px;
 }
+
+main {
+    font-family: var(--primary-font);
+}
+
+header {
+    font-family: var(--secondary-font);  
+}
+
 
 #course-title {
     background-color: var(--blue);
@@ -95,7 +105,7 @@ h2 {
 }
 
 
-.card-profile_bio, .card-profile_country {
+.card-profile_bio {
     display: flex;
     padding: 1.5rem;
     gap:1rem
@@ -107,8 +117,16 @@ h2 {
     width: 30%
 }
 
-.card-profile_country figure{
-    width: 30%;
+.card-profile_country {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1.5rem;
+    gap: 1rem;
+    align-items: start;
+}
+
+.card-profile_country figure {
+    margin: 0;
 }
 
 .card-resources {
