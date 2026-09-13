@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals, Web Site of Luis Chaves"
+    />
+    <meta name="author" content="Luis Chaves" />
+    <title>
+      "WDD 131 – Dynamic Web Fundamentals – Luis Chaves - Temple Album
+    </title>
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="course-title">Temple Album</h1>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="temples-container">
+        <figure>
+          <img src="images/australia-temple.jpg" alt="Australia Temple" />
+          <figcaption>Australia Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/bogota-temple.jpg" alt="Bogotá Temple" />
+          <figcaption>Bogotá Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/idaho-temple.jpg" alt="Idaho Temple" />
+          <figcaption>Idaho Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/mexico-temple.jpg" alt="Mexico Temple" />
+          <figcaption>Mexico Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/new_zeland-temple.jpg" alt="New Zealand Temple" />
+          <figcaption>New Zealand Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/nigeria-temple.jpg" alt="Nigeria Temple" />
+          <figcaption>Nigeria Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/peru-temple.jpg" alt="Peru Temple" />
+          <figcaption>Peru Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/texas-temple.jpg" alt="Texas Temple" />
+          <figcaption>Texas Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/uruguay-temple.jpg" alt="Uruguay Temple" />
+          <figcaption>Uruguay Temple</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p>© <span id="currentyear"> </span> | Luis Chaves | Colombia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

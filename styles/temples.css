@@ -1,0 +1,153 @@
+:root {
+  --dark: #36454f;
+  --blue: #304860;
+  --white: #ffffff;
+  --gray: #707070;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Valley Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--blue);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px var(--white);
+}
+
+header,
+main {
+  margin: 0 auto;
+}
+
+main {
+  max-width: 1024px;
+}
+
+h1 {
+  grid-column: 1;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+/*hamburger*/
+
+.menu-button {
+  grid-column: 2;
+  grid-row: 1;
+  width: 30px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+.menu-button.open span:nth-child(1) {
+  transform: translateY(10.5px) rotate(45deg);
+}
+
+.menu-button.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.open span:nth-child(3) {
+  transform: translateY(-10.5px) rotate(-45deg);
+}
+
+nav {
+  grid-column: 1 / -1;
+  background-color: var(--blue);
+  display: none;
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav a:hover {
+  text-decoration: underline double;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.active {
+  text-decoration: underline double;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+/* Album */
+.temples-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+figure {
+  margin: 0;
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+  text-align: center;
+  border: none;
+}
+
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  
+}
+
+
+figcaption {
+  padding: 1rem;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  display: none;
+  padding: 1.5rem;
+  text-align: center;
+}
