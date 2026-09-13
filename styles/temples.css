@@ -20,7 +20,7 @@ header {
   grid-gap: 1rem;
   align-items: center;
   padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--dark);
   box-shadow: 0 0 30px var(--white);
 }
 
@@ -125,7 +125,6 @@ figure {
   border: 1px solid var(--gray);
   background-color: var(--white);
   text-align: center;
-  border: none;
 }
 
 figure img {
@@ -133,7 +132,7 @@ figure img {
   height: 220px;
   object-fit: cover;
   display: block;
-  
+
 }
 
 
@@ -143,6 +142,7 @@ figcaption {
   font-size: 1rem;
 }
 
+/* footer */
 
 footer {
   background-color: var(--blue);
