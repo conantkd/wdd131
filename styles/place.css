@@ -1,11 +1,11 @@
 :root {
-  --header-bg: #0b4f8a;
+  --blue-bg: #0b4f8a;
   --header-text: #121212;
-  --accent-yellow: #f5b700;
+  --yellow-bg: #f5b700;
   --body-bg: #ffffff;
   --body-text: #1a1a1a;
-  --footer-bg: #8c1d1d;
-  --footer-text: #ffffff;
+  --red-bg: #8c1d1d;
+  --white-text: #ffffff;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Valley Sans", sans-serif;
 }
@@ -31,14 +31,14 @@ header {
 }
 
 header h1 {
-  background-color: var(--accent-yellow);
+  background-color: var(--yellow-bg);
   width: 100%;
   text-align: center;
   padding: 1rem 0;
 }
 
 picture img {
-  background-color: var(--header-bg);
+  background-color: var(--blue-bg);
   padding: 1.2rem 0 0.2rem;
   width: 100%;
 }
@@ -57,8 +57,8 @@ main p {
 }
 
 footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
+  background-color: var(--red-bg);
+  color: var(--white-text);
   padding: 1rem;
 }
 
@@ -70,7 +70,7 @@ footer {
   }
 
   main {
-    background-color: var(--header-bg);
+    background-color: var(--blue-bg);
   }
 
   .container {
@@ -90,8 +90,8 @@ footer {
 
   .data-section h2,
   .weather-section h2 {
-    background-color: var(--header-bg);
-    color: var(--footer-text);
+    background-color: var(--blue-bg);
+    color: var(--white-text);
     padding: 0.5rem 1rem;
     margin: -1rem -1.25rem 0.8rem -2.25rem;
     font-size: 1.2rem;
