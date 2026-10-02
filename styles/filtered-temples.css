@@ -128,7 +128,7 @@ h2 {
 .temple-card {
   margin: 0;
   background-color: var(--white);
-  border: 1px solid #d4d9dd;
+  border: 1px solid var(--gray);
   text-align: left;
 }
 
