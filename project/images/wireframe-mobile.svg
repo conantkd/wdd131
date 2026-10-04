@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Rema mobile homepage wireframe</title>
+  <desc id="desc">A clean mobile layout for the Rema Fisioterapia homepage, using open sections and minimal borders.</desc>
+  <rect width="390" height="1120" fill="#ffffff"/>
+  <g font-family="Arial, sans-serif" fill="#191c1d">
+    <rect x="0" y="0" width="390" height="72" fill="#ffffff"/>
+    <rect x="22" y="18" width="112" height="38" fill="#e5e7eb"/>
+    <text x="78" y="42" text-anchor="middle" font-size="12">REMA LOGO</text>
+    <path d="M339 26h28M339 36h28M339 46h28" stroke="#454b50" stroke-width="2"/>
+    <path d="M0 71h390" stroke="#d1d5db"/>
+
+    <rect x="0" y="72" width="390" height="264" fill="#eef0f2"/>
+    <text x="28" y="111" font-size="11" fill="#5f6368">INICIO / HERO</text>
+    <text x="28" y="151" font-size="25" font-weight="700">Fisioterapia a</text>
+    <text x="28" y="181" font-size="25" font-weight="700">domicilio</text>
+    <text x="28" y="207" font-size="13">Bello, Medellín y Valle de Aburrá</text>
+    <rect x="28" y="225" width="180" height="38" fill="#d1d5db"/>
+    <text x="118" y="249" text-anchor="middle" font-size="12" font-weight="700">AGENDA TU CITA</text>
+    <rect x="228" y="226" width="134" height="86" fill="#d9dde1"/>
+    <text x="295" y="273" text-anchor="middle" font-size="11" fill="#5f6368">IMAGEN</text>
+    <text x="28" y="305" font-size="11" fill="#5f6368">Imagen principal o carrusel</text>
+
+    <text x="24" y="377" font-size="19" font-weight="700">Servicios</text>
+    <path d="M24 391h342" stroke="#9aa0a6"/>
+    <text x="28" y="423" font-size="14" font-weight="700">Terapia Física</text>
+    <text x="28" y="444" font-size="12" fill="#5f6368">Atención personalizada basada en evidencia</text>
+    <text x="350" y="435" font-size="18">›</text>
+    <path d="M24 460h342" stroke="#d1d5db"/>
+    <text x="28" y="490" font-size="14" font-weight="700">Fisioterapia a domicilio</text>
+    <text x="28" y="511" font-size="12" fill="#5f6368">Atención en Bello, Medellín y alrededores</text>
+    <text x="350" y="502" font-size="18">›</text>
+    <path d="M24 527h342" stroke="#d1d5db"/>
+    <text x="28" y="557" font-size="14" font-weight="700">Terapia Vascular y Manual</text>
+    <text x="28" y="578" font-size="12" fill="#5f6368">Tratamientos especializados para tu bienestar</text>
+    <text x="350" y="568" font-size="18">›</text>
+    <path d="M24 594h342" stroke="#d1d5db"/>
+
+    <rect x="0" y="620" width="390" height="132" fill="#f3f4f5"/>
+    <text x="24" y="655" font-size="19" font-weight="700">¿Por qué Rema?</text>
+    <text x="24" y="682" font-size="13">Equipo contigo · Atención en casa · Meta clara</text>
+    <text x="24" y="707" font-size="12" fill="#5f6368">Te acompañamos a recuperar movimiento y calidad de vida.</text>
+
+    <text x="24" y="796" font-size="19" font-weight="700">Opiniones de pacientes</text>
+    <text x="24" y="825" font-size="13" font-weight="700">★★★★★  Reseña de Google</text>
+    <text x="24" y="850" font-size="12" fill="#5f6368">“Excelente atención y acompañamiento durante</text>
+    <text x="24" y="869" font-size="12" fill="#5f6368">todo el proceso...”</text>
+    <path d="M24 889h342" stroke="#d1d5db"/>
+
+    <rect x="0" y="914" width="390" height="144" fill="#eef0f2"/>
+    <text x="24" y="947" font-size="19" font-weight="700">Contáctanos</text>
+    <text x="24" y="974" font-size="12">Teléfono y WhatsApp</text>
+    <text x="24" y="995" font-size="12">Consultorio y zonas de cobertura</text>
+    <text x="24" y="1016" font-size="12">Horarios de atención</text>
+    <rect x="258" y="963" width="108" height="72" fill="#d9dde1"/>
+    <text x="312" y="1003" text-anchor="middle" font-size="11" fill="#5f6368">MAPA</text>
+
+    <rect x="0" y="1074" width="390" height="46" fill="#e1e3e6"/>
+    <text x="24" y="1094" font-size="12" font-weight="700">REMA FISIOTERAPIA</text>
+    <text x="24" y="1110" font-size="10" fill="#5f6368">Redes sociales · Políticas · Derechos reservados</text>
+  </g>
+</svg>

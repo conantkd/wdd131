@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+  <title id="title">Rema desktop homepage wireframe</title>
+  <desc id="desc">A clean desktop layout for the Rema Fisioterapia homepage, using open sections and minimal borders.</desc>
+  <rect width="1280" height="900" fill="#ffffff"/>
+  <g font-family="Arial, sans-serif" fill="#191c1d">
+    <rect x="0" y="0" width="1280" height="92" fill="#ffffff"/>
+    <rect x="54" y="24" width="148" height="44" fill="#e5e7eb"/>
+    <text x="128" y="51" text-anchor="middle" font-size="14">REMA LOGO</text>
+    <text x="716" y="55" font-size="15">Inicio</text>
+    <text x="808" y="55" font-size="15">Servicios</text>
+    <text x="922" y="55" font-size="15">Nosotros</text>
+    <text x="1040" y="55" font-size="15">Políticas</text>
+    <rect x="1116" y="29" width="110" height="38" fill="#d1d5db"/>
+    <text x="1171" y="53" text-anchor="middle" font-size="12" font-weight="700">CONTACTO</text>
+    <path d="M0 91h1280" stroke="#d1d5db"/>
+
+    <rect x="0" y="92" width="1280" height="292" fill="#eef0f2"/>
+    <text x="76" y="137" font-size="12" fill="#5f6368">INICIO / HERO</text>
+    <text x="76" y="197" font-size="34" font-weight="700">Fisioterapia a domicilio en</text>
+    <text x="76" y="239" font-size="34" font-weight="700">Bello, Medellín y Valle de Aburrá</text>
+    <text x="76" y="279" font-size="16" fill="#5f6368">Recupera movimiento y calidad de vida con un equipo que te</text>
+    <text x="76" y="303" font-size="16" fill="#5f6368">acompaña durante tu proceso de rehabilitación.</text>
+    <rect x="76" y="324" width="194" height="42" fill="#d1d5db"/>
+    <text x="173" y="351" text-anchor="middle" font-size="13" font-weight="700">AGENDA TU CITA</text>
+    <rect x="776" y="119" width="430" height="238" fill="#d9dde1"/>
+    <text x="991" y="244" text-anchor="middle" font-size="15" fill="#5f6368">IMAGEN / CARRUSEL DE TERAPIA</text>
+    <circle cx="974" cy="337" r="4" fill="#6b7280"/>
+    <circle cx="991" cy="337" r="4" fill="#b8bdc3"/>
+    <circle cx="1008" cy="337" r="4" fill="#b8bdc3"/>
+
+    <text x="56" y="435" font-size="22" font-weight="700">Servicios de fisioterapia</text>
+    <path d="M56 451h1168" stroke="#9aa0a6"/>
+    <text x="72" y="488" font-size="16" font-weight="700">Terapia Física</text>
+    <text x="72" y="516" font-size="13" fill="#5f6368">Tratamiento personalizado</text>
+    <text x="72" y="536" font-size="13" fill="#5f6368">basado en evidencia.</text>
+    <path d="M352 470v100" stroke="#d1d5db"/>
+    <text x="382" y="488" font-size="16" font-weight="700">A domicilio</text>
+    <text x="382" y="516" font-size="13" fill="#5f6368">Atención en Bello, Medellín, Envigado</text>
+    <text x="382" y="536" font-size="13" fill="#5f6368">y el Valle de Aburrá.</text>
+    <path d="M664 470v100" stroke="#d1d5db"/>
+    <text x="694" y="488" font-size="16" font-weight="700">Terapia Vascular</text>
+    <text x="694" y="516" font-size="13" fill="#5f6368">Tratamientos para circulación,</text>
+    <text x="694" y="536" font-size="13" fill="#5f6368">inflamación y recuperación.</text>
+    <path d="M952 470v100" stroke="#d1d5db"/>
+    <text x="982" y="488" font-size="16" font-weight="700">Terapia Manual</text>
+    <text x="982" y="516" font-size="13" fill="#5f6368">Movilización articular y alivio</text>
+    <text x="982" y="536" font-size="13" fill="#5f6368">de tensiones y dolor.</text>
+
+    <rect x="0" y="590" width="1280" height="118" fill="#f3f4f5"/>
+    <text x="56" y="632" font-size="21" font-weight="700">¿Por qué Rema?</text>
+    <text x="56" y="666" font-size="14">Equipo contigo  ·  Atención en casa  ·  Metas claras  ·  Experiencia clínica</text>
+    <text x="824" y="666" font-size="14" fill="#5f6368">Remamos contigo hacia tu bienestar.</text>
+
+    <text x="56" y="758" font-size="21" font-weight="700">Opiniones de pacientes</text>
+    <text x="56" y="790" font-size="14" font-weight="700">★★★★★  Reseña de Google</text>
+    <text x="56" y="815" font-size="13" fill="#5f6368">“Excelente servicio y acompañamiento durante todo el proceso...”</text>
+    <text x="56" y="837" font-size="12" fill="#5f6368">Calificación y opiniones de pacientes</text>
+    <path d="M620 746v112" stroke="#d1d5db"/>
+    <text x="660" y="758" font-size="21" font-weight="700">Contáctanos</text>
+    <text x="660" y="790" font-size="13">Teléfono / WhatsApp  ·  Consultorio  ·  Horarios</text>
+    <text x="660" y="813" font-size="13">Atención a domicilio en el Valle de Aburrá</text>
+    <rect x="1040" y="774" width="176" height="72" fill="#d9dde1"/>
+    <text x="1128" y="814" text-anchor="middle" font-size="12" fill="#5f6368">MAPA</text>
+
+    <rect x="0" y="872" width="1280" height="28" fill="#e1e3e6"/>
+    <text x="56" y="891" font-size="11" font-weight="700">REMA FISIOTERAPIA</text>
+    <text x="1224" y="891" text-anchor="end" font-size="11" fill="#5f6368">Redes sociales  ·  Políticas  ·  Derechos reservados</text>
+  </g>
+</svg>
