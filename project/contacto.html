@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Miguel Chaves"><meta name="description" content="Consulta sobre servicios de fisioterapia de Rema en el Valle de Aburrá.">
+    <meta name="keywords" content="contacto, citas, fisioterapia, Bello, Medellín, Envigado, Rema">
+    <meta name="theme-color" content="#452674">
+    <title>Contacto | Rema Fisioterapia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css"><script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main id="contenido" class="wrap page-main page-main--centered">
+      <section class="page-intro"><p class="eyebrow" data-es="Contacto" data-en="Contact">Contacto</p><h1 data-es="Conversemos sobre tu próximo paso." data-en="Let's talk about your next step.">Conversemos sobre tu próximo paso.</h1><p data-es="Cuéntanos qué servicio te interesa y en qué municipio estás. No incluyas diagnósticos ni información clínica confidencial." data-en="Tell us which service interests you and which municipality you are in. Please do not include diagnoses or confidential health information.">Cuéntanos qué servicio te interesa y en qué municipio estás. No incluyas diagnósticos ni información clínica confidencial.</p></section>
+      <div class="contact-layout">
+        <section class="contact-form-section" aria-labelledby="form-title"><h2 id="form-title" data-es="Solicita información" data-en="Request information">Solicita información</h2>
+          <form id="contact-form">
+            <div class="form-field"><label for="full-name" data-es="Nombre" data-en="Name">Nombre</label><input id="full-name" name="name" autocomplete="name" required minlength="2" maxlength="80"></div>
+            <div class="form-field"><label for="email" data-es="Correo electrónico" data-en="Email address">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"></div>
+            <div class="form-field"><label for="municipality" data-es="Municipio" data-en="Municipality">Municipio</label><select id="municipality" name="municipality" required><option value="" data-es="Selecciona una opción" data-en="Choose an option">Selecciona una opción</option><option>Bello</option><option>Medellín</option><option>Envigado</option><option value="other" data-es="Otro" data-en="Other">Otro</option></select></div>
+            <div class="form-field"><label for="service-interest" data-es="Servicio de interés" data-en="Service of interest">Servicio de interés</label><select id="service-interest" name="service" required><option value="" data-es="Selecciona un servicio" data-en="Choose a service">Selecciona un servicio</option></select></div>
+            <div class="form-field"><label for="message" data-es="¿En qué podemos orientarte?" data-en="How can we help?">¿En qué podemos orientarte?</label><textarea id="message" name="message" rows="5" required minlength="10" maxlength="600"></textarea><small data-es="Máximo 600 caracteres. No incluyas información médica privada." data-en="Up to 600 characters. Do not include private medical information.">Máximo 600 caracteres. No incluyas información médica privada.</small></div>
+            <label class="consent-check"><input type="checkbox" name="privacy" required><span data-es="Acepto las políticas y condiciones de privacidad." data-en="I accept the privacy policy and terms.">Acepto las políticas y condiciones de privacidad.</span></label>
+            <button class="button button-primary" type="submit" data-es="Validar solicitud" data-en="Review request">Validar solicitud</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+        <aside class="contact-aside"><p class="eyebrow" data-es="Atención a domicilio" data-en="In-home care">Atención a domicilio</p><h2 data-es="En el Valle de Aburrá" data-en="Across the Aburrá Valley">En el Valle de Aburrá</h2><ul class="area-list"><li>Bello</li><li>Medellín</li><li>Envigado</li></ul><p data-es="La disponibilidad y cobertura exacta se confirman según la dirección y la agenda del equipo." data-en="Exact coverage and availability are confirmed based on your address and the team's schedule.">La disponibilidad y cobertura exacta se confirman según la dirección y la agenda del equipo.</p></aside>
+      </div>
+    </main><footer id="site-footer"></footer>
+  </body>
+</html>
