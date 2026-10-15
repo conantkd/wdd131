@@ -16,8 +16,8 @@ const navigation = [
 ];
 
 const translations = {
-	es: { brand: "Fisioterapia", valley: "Valle de Aburrá", appointment: "Atención con cita previa", mainNavigation: "Navegación principal", language: "English", languageLabel: "Cambiar idioma a inglés", menu: "Abrir menú de navegación", footerLine: "Fisioterapia a domicilio en el Valle de Aburrá.", footerLocation: "Bello, Medellín y Envigado", references: "Referencias", copyright: "Todos los derechos reservados.", interestSaved: "Servicio guardado como interés", interestEmpty: "Aún no has guardado un servicio de interés.", choose: "Me interesa", category: { pain: "Dolor y movilidad", recovery: "Rehabilitación", prevention: "Prevención y bienestar" }, formSuccess: "Formulario validado." },
-	en: { brand: "Physical Therapy", valley: "Aburrá Valley", appointment: "Visits by appointment", mainNavigation: "Main navigation", language: "Español", languageLabel: "Switch language to Spanish", menu: "Open navigation menu", footerLine: "In-home physical therapy across the Aburrá Valley.", footerLocation: "Bello, Medellín, and Envigado", references: "References", copyright: "All rights reserved.", interestSaved: "Saved service of interest", interestEmpty: "You have not saved a service of interest yet.", choose: "I'm interested", category: { pain: "Pain and mobility", recovery: "Rehabilitation", prevention: "Prevention and wellbeing" }, formSuccess: "Form validated." },
+	es: { brand: "Fisioterapia", valley: "Valle de Aburrá", appointment: "Atención con cita previa", mainNavigation: "Navegación principal", language: "English", languageLabel: "Cambiar idioma a inglés", menu: "Abrir menú de navegación", footerLine: "Fisioterapia a domicilio en el Valle de Aburrá.", footerLocation: "Bello, Medellín y Envigado", references: "Referencias", copyright: "Todos los derechos reservados.", interestSaved: "Servicio guardado como interés", interestEmpty: "Aún no has guardado un servicio de interés.", choose: "Me interesa", category: { pain: "Dolor y movilidad", recovery: "Rehabilitación", prevention: "Prevención y bienestar" }, formSuccess: "Formulario guardado en este navegador. No se ha enviado.", formRestored: "Se recuperaron los datos guardados en este navegador.", formError: "No se pudo guardar el formulario en este navegador." },
+	en: { brand: "Physical Therapy", valley: "Aburrá Valley", appointment: "Visits by appointment", mainNavigation: "Main navigation", language: "Español", languageLabel: "Switch language to Spanish", menu: "Open navigation menu", footerLine: "In-home physical therapy across the Aburrá Valley.", footerLocation: "Bello, Medellín, and Envigado", references: "References", copyright: "All rights reserved.", interestSaved: "Saved service of interest", interestEmpty: "You have not saved a service of interest yet.", choose: "I'm interested", category: { pain: "Pain and mobility", recovery: "Rehabilitation", prevention: "Prevention and wellbeing" }, formSuccess: "Form saved in this browser. It has not been sent.", formRestored: "Saved form details were restored in this browser.", formError: "The form could not be saved in this browser." },
 };
 
 const pageTitles = {
@@ -102,7 +102,7 @@ function applyLanguage() {
 		formService.value = selectedService;
 	}
 	const formStatus = document.querySelector("#form-status");
-	if (formStatus?.dataset.submitted === "true") formStatus.textContent = `${translations[currentLanguage].formSuccess}`;
+	if (formStatus?.dataset.state) formStatus.textContent = translations[currentLanguage][formStatus.dataset.state];
 }
 
 function configureForm() {
@@ -112,13 +112,33 @@ function configureForm() {
 	serviceSelect.innerHTML = `<option value="">${currentLanguage === "es" ? "Selecciona un servicio" : "Choose a service"}</option>${services.map((service) => `<option value="${service.id}">${service.title[currentLanguage]}</option>`).join("")}`;
 	const savedInterest = localStorage.getItem("rema-interest");
 	if (services.find((service) => service.id === savedInterest)) serviceSelect.value = savedInterest;
+	const status = document.querySelector("#form-status");
+	try {
+		const savedForm = JSON.parse(localStorage.getItem("rema-contact-form") || "null");
+		if (savedForm && typeof savedForm === "object") {
+			for (const name of ["name", "email", "municipality", "message"]) {
+				if (typeof savedForm[name] === "string") form.elements[name].value = savedForm[name];
+			}
+			if (services.some((service) => service.id === savedForm.service)) serviceSelect.value = savedForm.service;
+			status.dataset.state = "formRestored";
+			status.textContent = translations[currentLanguage].formRestored;
+		}
+	} catch (error) {
+		// Ignore invalid or unavailable browser storage; the form remains usable.
+	}
 	form.addEventListener("submit", (event) => {
 		event.preventDefault();
 		if (!form.reportValidity()) return;
-		const status = document.querySelector("#form-status");
-		status.textContent = `${translations[currentLanguage].formSuccess}`;
-		status.dataset.submitted = "true";
-		localStorage.setItem("rema-interest", serviceSelect.value);
+		const formData = Object.fromEntries(new FormData(form).entries());
+		delete formData.privacy;
+		try {
+			localStorage.setItem("rema-contact-form", JSON.stringify(formData));
+			localStorage.setItem("rema-interest", serviceSelect.value);
+			status.dataset.state = "formSuccess";
+		} catch (error) {
+			status.dataset.state = "formError";
+		}
+		status.textContent = translations[currentLanguage][status.dataset.state];
 	});
 }
 
